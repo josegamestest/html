@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rolagem por José Anastacio (josegamestest)</title>
+	<script>
+		window.onload = function() {
+			var botoes = document.querySelectorAll('.rolagem-btn');
+			botoes.forEach(function(botao) {
+				botao.addEventListener('click', function(event) {
+					event.preventDefault();
+					var elemento = document.querySelector(this.getAttribute('data-rolagem'));
+					if (elemento) {
+						elemento.scrollIntoView({behavior: 'smooth'});
+					}
+				});
+			});
+		}
+	</script>
+</head>
+<body>
+	<h1>Rolagem para títulos e subtítulos</h1>
+	<p>Clique nos botões para rolar para os títulos e subtítulos</p>
+	<botao id="botao">
+      <button class="rolagem-btn" data-rolagem="h1">Título 1</button>
+      <button class="rolagem-btn" data-rolagem="h2">Subtítulo 1</button>
+      <button class="rolagem-btn" data-rolagem="h3">Subtítulo 2</button>
+      <button class="rolagem-btn" data-rolagem="h4">Subtítulo 4</button>
+    </botao>
+	<h1>Título 1</h1>
+	<p>BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-</p>
+	<button class="rolagem-btn" data-rolagem="#botao">botao</button>
+
+	<h2>Subtítulo 1</h2>
+	<p>BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-</p>
+	<button class="rolagem-btn" data-rolagem="#botao">botao</button>
+
+	<h3>Subtítulo 2</h3>
+	<p>BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-</p>
+	<button class="rolagem-btn" data-rolagem="#botao">botao</button>
+
+	<h4>Subtítulo 3</h4>
+	<p>BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-</p>
+    <button class="rolagem-btn" data-rolagem="#botao">botao</button>
