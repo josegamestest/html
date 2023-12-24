@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head> 
+    <body> 
+        <h2>Servidores Minetest!</h2>
+        <input type="button" value="joseworld revolution" onclick=joseworld()>
+        <input type="button" value="BIGWORLD" onclick=Bigworld()>
+        <script>
+            function joseworld(){
+                alert("Servidor: joseworld revolution\nEndereço: biglinux-minetest.ddns.net\nPorta: 30002 \n Boa diverção");
+            }
+            function Bigworld(){
+                alert("Servidor: Bigworld\nEndereço: biglinux-minetest.ddns.net\nPorta: 30000 \n Boa diverção");
+            }
+        </script>
+    </body> 
+</html> 
